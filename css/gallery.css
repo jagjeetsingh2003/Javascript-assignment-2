@@ -1,0 +1,43 @@
+/* Gallery Container */
+#gallery {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Featured Image */
+#featured-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Thumbnail List */
+#thumbnail-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#thumbnail-list li {
+  cursor: pointer;
+}
+
+#thumbnail-list img {
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(95%); /* Apply grayscale filter to all thumbnail images */
+}
+
+#thumbnail-list img.active {
+  filter: none; /* Remove grayscale filter from the active thumbnail image */
+}
+
+/* Image Title */
+#image-title {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
